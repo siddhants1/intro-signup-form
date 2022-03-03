@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Siddhant Sharma">
+    <meta name="description" content="Front end practice intro page with sign-up form and validation using JavaScript">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Intro component with sign up form</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+  <body>
 
-  Learn to code by watching others
+    <main>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+      <!-- Flex Wrapper Begins -->
+      <div class="wrapper">
 
-  Try it free 7 days then $20/mo. thereafter
+        <!-- Left description Div Begins -->
+        <div class="left-description-container">
+          <h1 class="left-upper-heading">Learn to code by</h1>
+          <h1 class="left-lower-heading">watching Others</h1>
+          <p>See how experienced developers sovle problems in real time.</p>
+          <p>Watching scripted tutorials is great, but understanding how</p>
+          <p>developers think is invaluable.</p>
+        </div>
+        <!-- Left description Div Ends -->
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+        <!-- Right elements(form, button) Div Begins -->
+        <div class="right-elements-container">
+          <button><strong>Try it free seven days</strong> Then $20/mo. thereafter</button>
+          <!-- Form Container Begins -->
+          <div class="form-container">
 
-  Claim your free trial 
+            <form method="post">
+              <label for="first-name"></label>
+              <input type="text" placeholder="First Name" required class="text-input-field">
+              <label for="last-name"></label>
+              <input type="text" placeholder="Last Name" class="text-input-field">
+              <label for="email"></label>
+              <input type="email" placeholder="Email" required class="text-input-field">
+              <label for="password"></label>
+              <input type="password" placeholder="Password" required class="text-input-field">
+              <input type="submit" value="CLAIM YOUR FREE TRIAL" class="form-submit-button">
+            </form>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+            <p class="form-conditions">By clicking the button you are agreeing to our <span class="form-tnc-red">Terms and Services</span></p>
+
+          </div>
+          <!-- Form Container Ends -->
+        </div>
+        <!-- Right elements(form, button) Div Ends -->
+
+      </div>
+      <!-- Flex Wrapper Ends -->
+
+    </main>
+
+    <script rel="text/javascript" src="./scripts/script.js"></script>
+  </body>
+
 </html>
