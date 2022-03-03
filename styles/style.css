@@ -84,6 +84,10 @@ main {
     box-shadow: 0 0.3rem rgb(0 0 0 / 0.2);
 }
 
+.right-elements-container > button:hover {
+    background-color: rgba(0, 238, 255, 0.925);
+}
+
 .form-container {
     background-color: white;
     padding: 1.2rem;
@@ -109,6 +113,10 @@ main {
     background-color: hsl(154, 59%, 51%);
     color: white;
     cursor: pointer;
+}
+
+.form-submit-button:hover {
+    background-color: rgba(235, 63, 63, 0.959);
 }
 
 .form-conditions {
