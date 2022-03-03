@@ -121,10 +121,11 @@ main {
 
 .form-conditions {
     text-align: center;
+    color: black;
 }
 
 .form-tnc-red {
-    color: red;
+    color: hsl(0, 100%, 74%);
     cursor: pointer;
 }
 
